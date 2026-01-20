@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const projects = [
-  { title: "Portfolio Website", img: "../src/assets/images/portfolio.jfif" },
-  { title: "E-commerce App", img: "../src/assets/images/e-commerce.png" },
-  { title: "Todo App", img: "../src/assets/images/todo-app.png" },
+  { title: "Portfolio Website", img: "../../assets/images/portfolio.jfif" },
+  { title: "E-commerce App", img: "../../assets/images/e-commerce.png" },
+  { title: "Todo App", img: "../../assets/images/todo-app.png" },
 ];
 
 const PortfolioPreview = () => {
@@ -17,7 +17,7 @@ const PortfolioPreview = () => {
               key={i}
               className="bg-gray-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transform transition"
             >
-              <img src={project.img} alt={project.title} className="w-full h-48" />
+              <img ..={project.img} alt={project.title} className="w-full h-48" />
               <h3 className="p-4 font-semibold">{project.title}</h3>
             </div>
           ))}
