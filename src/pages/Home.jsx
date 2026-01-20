@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import Hero from '../components/home/hero';
+import Hero from '../components/home/Hero';
 import TechnicalSkills from "../components/home/TechnicalSkills";
 import PortfolioPreview from "../components/home/PortfolioPreview";
 
