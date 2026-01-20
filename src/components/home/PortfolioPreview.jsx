@@ -23,7 +23,7 @@ const PortfolioPreview = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48"
               />
               <h3 className="p-4 font-semibold">{project.title}</h3>
             </div>
