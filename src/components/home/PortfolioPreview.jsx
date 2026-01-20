@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const projects = [
-  { title: "Portfolio Website", img: "/src/assets/images/portfolio.jfif" },
-  { title: "E-commerce App", img: "/src/assets/images/e-commerce.png" },
-  { title: "Todo App", img: "/src/assets/images/todo-app.png" },
+  { title: "Portfolio Website", img: "../src/assets/images/portfolio.jfif" },
+  { title: "E-commerce App", img: "../src/assets/images/e-commerce.png" },
+  { title: "Todo App", img: "../src/assets/images/todo-app.png" },
 ];
 
 const PortfolioPreview = () => {
