@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import portfolioImg from "../../assets/images/portfolio.jfif";
+import ecommerceImg from "../../assets/images/e-commerce.png";
+import todoImg from "../../assets/images/todo-app.png";
 
 const projects = [
-  { title: "Portfolio Website", img: "../../assets/images/portfolio.jfif" },
-  { title: "E-commerce App", img: "../../assets/images/e-commerce.png" },
-  { title: "Todo App", img: "../../assets/images/todo-app.png" },
+  { title: "Portfolio Website", img: portfolioImg },
+  { title: "E-commerce App", img: ecommerceImg },
+  { title: "Todo App", img: todoImg },
 ];
 
 const PortfolioPreview = () => {
@@ -17,7 +20,11 @@ const PortfolioPreview = () => {
               key={i}
               className="bg-gray-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transform transition"
             >
-              <img ..={project.img} alt={project.title} className="w-full h-48" />
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
               <h3 className="p-4 font-semibold">{project.title}</h3>
             </div>
           ))}
